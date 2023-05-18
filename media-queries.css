@@ -1,0 +1,140 @@
+@media screen and (max-width: 991px){
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .main-nav {
+        overflow: initial;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        width: 100%;
+        top: 100%;
+        padding-block: 10px;
+        transition: 0.2s;
+    }
+
+    .nav-links.active{
+        left: 0;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+    }
+
+    .examples-area {
+        gap: 20px;
+    }
+
+    .example-card {
+        width: calc(50% - 10px);
+        height: 180px;
+    }
+
+    .cta-section {
+        padding-block: 80px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .header-section {
+        padding-inline: 80px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-left {
+        width: 100vw;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .features-card {
+        min-width: 40%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .link-column {
+        align-items: stretch;
+    }
+
+    .sub-footer-container {
+        flex-direction: column;
+    }
+
+    .examples-header h1 {
+        font-size: 2rem;
+        margin-block: 20px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+        :root {
+            --padding-inline-section: 10px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+        
+
+        .header-left {
+            padding-inline: var(--padding-inline-section);
+        }
+
+        .primary-button {
+            font-size: 1rem;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .features-card {
+            min-width: 80%;
+            text-align: center;
+        }
+
+        .example-card {
+            width: 100%;
+        }
+
+        .examples-area {
+            justify-content: center;
+        }
+
+        .examples-section {
+            padding: 0;
+        }
+
+        .small-bold-text {
+            margin-top: 10px;
+        }
+
+        .cta-section-container {
+            text-align: center;
+        }
+}
